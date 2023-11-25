@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "cinzel";
+    src: url(fonts/CinzelDecorative-Bold.ttf);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set height and width for html, body, and #map */
+  html, body, #map {
+    height: 50vh;
+    width: 90vw;
+  }
+  h1{
+    font-family: "cinzel";
+    position: fixed;
+    top: 20px;
+    left: 100px;
+    z-index: 1000;
+  writing-mode: vertical-rl;
+  
+  }
+ 

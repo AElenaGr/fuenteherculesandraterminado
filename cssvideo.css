@@ -1,0 +1,36 @@
+/* cssvideo.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #007bff;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los controles del video */
+video::-webkit-media-controls {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+}
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button {
+  color: #007bff;
+}
+
+video::-webkit-media-controls-volume-slider-container {
+  display: none; /* Oculta el control de volumen */
+}

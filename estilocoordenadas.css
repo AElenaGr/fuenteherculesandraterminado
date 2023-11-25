@@ -1,0 +1,51 @@
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background-color: #b5dad1;
+  margin: 20px; /* Añade márgenes a la página */
+  padding: 20px; /* Añade relleno interno para más espacio */
+}
+
+/* Estilo de contenedor */
+.container {
+  border: 2px solid white; /* Borde blanco */
+  padding: 30px; /* Espaciado interno */
+  margin-bottom: 40px; /* Espaciado inferior entre cajas */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+h1, h2, h3 {
+  display: inline-block;
+  background-color: #f3b7d5; /* Color rosa */
+  padding: 10px;
+  margin-bottom: 10px; /* Espaciado entre títulos */
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(182, 255, 229, 0.3); /* Sombra de difuminado verde suave */
+  transition: background-color 0.3s; /* Transición suave */
+  width: auto; /* Ajusta el ancho automáticamente al contenido */
+  font-family: "Times New Roman", serif; /* Cambia la fuente de los títulos */
+  font-size: 1.5em; /* Ajusta el tamaño de los títulos */
+}
+
+p {
+  font-size: 1.2em; /* Ajusta el tamaño del texto */
+}
+
+h1:hover, h2:hover, h3:hover {
+  background-color: #fff1a1; /* Amarillo en hover */
+}
+
+/* Nuevo estilo para el botón */
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b1edb1;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.button-link:hover {
+  background-color: #ffa1d0; /* Rosa clarito en hover */
+}

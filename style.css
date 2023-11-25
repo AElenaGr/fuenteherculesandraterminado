@@ -1,0 +1,99 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+img {
+  max-width: 10%;
+  height: auto;
+}
+
+h1, h2 {
+  color: #3498db; /* Azul brillante */
+  text-shadow: 2px 2px 5px rgba(52, 152, 219, 0.3);
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background-color: #3498db; /* Fondo azul brillante */
+  overflow: hidden;
+  flex-wrap: wrap; /* Permite que las pestañas se apilen en pantallas pequeñas */
+}
+
+.tab {
+  display: block;
+  color: #fff; /* Texto blanco */
+  text-decoration: none;
+  padding: 14px 20px;
+  margin: 10px; /* Espaciado entre las pestañas */
+  border: 2px solid #3498db; /* Borde azul brillante */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tab:hover {
+  background-color: #2072a8; /* Azul más oscuro al pasar el ratón */
+}
+
+.tab.active {
+  background-color: #2072a8; /* Color de fondo para la pestaña activa */
+}
+
+/* Estilos para dispositivos móviles y pantallas pequeñas */
+@media only screen and (max-width: 800px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    margin: 5px 0;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #000; /* Cambiado a negro para mejor visibilidad en fondo blanco */
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    background-color: #fff; /* Fondo blanco para el menú desplegable */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para resaltar el menú */
+  }
+
+  .menu a {
+    color: #000; /* Color de texto cambiado a negro para mejor visibilidad */
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+}
+
+/* Ocultar el menú desplegable en pantallas más grandes */
+@media only screen and (min-width: 801px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .tabs {
+    display: flex;
+  }
+}
